@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1 class="title">
+  Stock Fin APP
+</h1>
+<h2 class="subtitle">
+  All the stocks in one spot
+</h2>
+<button><a href="{{ url_for('auth.apple') }}"  class="navbar-item">
+  touch for Apple stock data
+</button>
+
+{% endblock %}
