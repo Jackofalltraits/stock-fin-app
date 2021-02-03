@@ -8,8 +8,11 @@
 <h2 class="subtitle">
   All the stocks in one spot
 </h2>
-<button><a href="{{ url_for('auth.apple') }}"  class="navbar-item">
-  touch for Apple stock data
-</button>
+
+  <input id="symbol" type="text" class="form-control" placeholder="search for stock">
+    <button><a href="{{url_for('main.display_quote')}}" class="navbar-item">Search Quotes</a></button>
+<div id="chart_container"></div>
+</main>
+</div>
 
 {% endblock %}
